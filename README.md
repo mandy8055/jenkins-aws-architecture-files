@@ -41,6 +41,6 @@
       - **EC2-user**: This credential will be of type SSH and you need to paste the RSA key that you downloaded from point number 5.
       - **aws-creds**: The credential that you created in point number 2.
     - Add a new executor node as per the gif attached below.<br/>![jenkins and github setup](assets/jenkins_2.gif)
-    - If `/tmp` directory low in space issue arises please **refer to this file for fix.**
+    - If `/tmp` directory low in space issue arises please [**refer to this file for fix.**](docs/tmp-low-space-fix.md)
 
 12. Create a new pipeline project with configurations and add a webhook to your github repo as shown in the attached gif above.
