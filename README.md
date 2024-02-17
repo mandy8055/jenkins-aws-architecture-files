@@ -8,8 +8,8 @@
 4. Create a policy and attach the policy to the role. Please find the rules of the policy in [**this file.**](docs/build-server-policy.txt)
 5. Navigate to your EC2 dashboard and create a key pair for your jenkins master server and build servers(i.e. the servers responsible for hosting CICD pipeline settings, building and deploying your changes).
 6. Create security group for you master server
-   a. Inbound rule can vary but usually contain an SSH rule, along with HTTP and HTTPS if required.
-   b. Outbound rule is always public.
+   - Inbound rule can vary but usually contain an SSH rule, along with HTTP and HTTPS if required.
+   - Outbound rule is always public.
 7. Create security group for build server
    a. Inbound rule will be SSH from you master server when we're configuring SSH agents. You can also add another SSH from your account.
    b. Outbound rule will be default i.e. public<br />![S3 and Cloudfront setup](assets/security_groups.gif)
